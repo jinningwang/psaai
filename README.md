@@ -10,6 +10,18 @@ A conda environment is recommended for this project, and a environment file is p
 conda env create -f environment.yml
 ```
 
-A local running Ollama server is required to run the model:
+A local running [Ollama](https://ollama.com/) server is required to run the model.
 
-<https://formulae.brew.sh/formula/ollama>
+## How to run
+
+To play with the model, run:
+
+```bash
+ollama start
+```
+
+Then, run the following command to start the assistant:
+
+```bash
+python agent/agent_mistral.py
+```
