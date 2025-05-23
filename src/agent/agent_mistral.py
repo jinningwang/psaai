@@ -108,7 +108,7 @@ if __name__ == "__main__":
         json_response = chat_with_mistral_json_output(user_input)
         # Determine output directory relative to script location
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        output_dir = os.path.join(script_dir, "output")
+        output_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "output")
         os.makedirs(output_dir, exist_ok=True)
 
         # Format date
